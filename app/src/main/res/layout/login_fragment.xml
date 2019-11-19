@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_fragment"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:id="@+id/LoginCard"
+        android:layout_height="250dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="146dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+
+        <EditText
+            android:id="@+id/UsernameEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:inputType="textPersonName"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="146dp"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/ic_person" />
+
+
+
+        <EditText
+            android:id="@+id/PasswordEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:inputType="numberPassword"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="146dp"
+            android:drawablePadding="8dp"
+            android:drawableEnd="@drawable/ic_lock"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/UserCard"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="146dp"
+            app:cardElevation="0dp">
+
+
+            <TextView
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/user_name"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/PasswordCard"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="40dp"
+            app:cardElevation="0dp">
+
+            <TextView
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/password"
+                android:textSize="12sp"
+                android:layout_marginStart="5dp"/>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/edit"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginCard"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="NotSibling" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

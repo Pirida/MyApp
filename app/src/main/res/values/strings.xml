@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="showmore">Show More</string>
+    <string name="student_name">Student Name</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="submit">SUBMIT</string>
+    <string name="team_name">Team Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="membership_no">Membership No</string>
+    <string name="proceed">PROCEED</string>
+    <string name="username">Username</string>
+    <string name="roll_no">Roll No</string>
+    <string name="class1">Class</string>
+    <string name="teacher">Teacher</string>
+    <string name="studentimage">StudentImage</string>
+    <string name="staffs">Staffs</string>
+    <string name="arrowback">ArrowBack</string>
+    <string name="addplus">AddPlus</string>
+    <string name="staffimage">StaffImage</string>
+    <string name="name">Name</string>
+    <string name="subject">Subject</string>
+    <string name="contact">Contact</string>
+    <string name="emailimage">EmailImage</string>
+    <string name="phoneimage">PhoneImage</string>
+    <string name="dottedimage">DottedImage</string>
+    <string name="save">SAVE</string>
+    <string name="add_staff">Add Staff</string>
+
+
+</resources>

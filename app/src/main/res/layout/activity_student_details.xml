@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:id="@+id/activity_student_details"
+    tools:context=".StudentDetailsActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/StudentCard"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468">
+
+        <View
+            android:id="@+id/StudentView"
+            android:layout_width="77dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <ImageView
+            android:id="@+id/StudentImage"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_girl"
+            android:contentDescription="@string/studentimage" />
+
+
+        <com.alespero.expandablecardview.ExpandableCardView
+            android:id="@+id/ExpandableCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="10dp"
+            app:expandOnClick="true"
+            app:inner_view="@layout/activity_main"
+            app:title="@string/showmore" />
+
+        <TextView
+            android:id="@+id/GenderTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/male"
+            android:ems="10"
+            android:text="" />
+
+
+        <TextView
+            android:id="@+id/StudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/student_name"
+            android:textColor="@color/black" />
+
+
+        <TextView
+            android:id="@+id/StudentTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:hint="@string/student_name"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/gender"
+            android:textColor="@color/black" />
+
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>
