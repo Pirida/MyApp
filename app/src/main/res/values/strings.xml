@@ -30,4 +30,43 @@
     <string name="add_staff">Add Staff</string>
 
 
+    <!--<string name="app_name">SchoolManagement</string>-->
+    <string name="login_textview">LOGIN</string>
+    <string name="girlimageview">GirlImageView</string>
+    <string name="payment">PAYMENT</string>
+    <string name="bellimageview">BellImageView</string>
+    <string name="payable_amount">Payable Amount</string>
+    <string name="rupeeimageview">RupeeImageView</string>
+    <string name="payable">Payable</string>
+    <string name="my_cards">My Cards</string>
+    <string name="add">+</string>
+    <string name="slotimageview">SlotImageView</string>
+    <string name="Atm_card_number">* * * * * * * * * * * * 3103</string>
+    <string name="exp_20_23">EXP 20/23</string>
+    <string name="cheristian_fernando">CHERISTIAN FERNANDO</string>
+    <string name="arrowimageview">ArrowImageView</string>
+    <string name="pay">Pay</string>
+    <string name="loginimageview">LoginImageView</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account ? Signup</string>
+    <string name="signupimageview">SignupImageView</string>
+    <string name="licence_number">Licence Number</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="address">Address</string>
+    <string name="signup">SIGNUP</string>
+    <string name="backarrowimageview">BackarrowImageView</string>
+    <string name="select_payment">SELECT PAYMENT</string>
+    <string name="examimageview">ExamImageView</string>
+    <string name="exams">Exams</string>
+    <string name="tutionfeeimageview">TutionFeeImageView</string>
+    <string name="tution_fees">Tution Fees</string>
+    <string name="eventimageview">EventImageView</string>
+    <string name="events">Events</string>
+    <string name="transportimageview">TransportImageView</string>
+    <string name="transport">Transport</string>
+    <string name="foodimageview">FoodImageView</string>
+    <string name="food">Food</string>
+
+
 </resources>

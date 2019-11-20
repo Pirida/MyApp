@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+
+    <View
+        android:id="@+id/LoginView"
+        android:layout_width="230dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/rightradius_black_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/DriverLogin"
+        android:layout_width="61dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/login_textview"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/LoginView"
+        app:layout_constraintEnd_toEndOf="@+id/LoginView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fadingEdgeLength="10dp"
+        android:padding="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginView">
+
+        <ImageView
+            android:id="@+id/LoginImageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/ic_loginimage"
+            android:contentDescription="@string/loginimageview" />
+
+        <EditText
+            android:id="@+id/DriverPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="160sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="14sp"
+            android:autofillHints="phone_number"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/DriverPassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:autofillHints="password"
+            tools:targetApi="o" />
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginTop="290sp"
+            android:layout_marginRight="80sp"
+            android:background="@color/black_color"
+            android:text="@string/login_textview"
+            android:textColor="@color/white_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/SignupTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="350sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/don_t_have_an_account_signup"
+            android:textColor="@color/black_color" />
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -3,4 +3,7 @@
     <item
         type="id"
         name="id_name" />
+
+    <item name="DriverLogin" type="id" />
 </resources>
+

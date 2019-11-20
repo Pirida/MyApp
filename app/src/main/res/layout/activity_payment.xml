@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:background="@drawable/round_darkblue_gradient">
+
+    <ImageView
+        android:id="@+id/GirlImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_ovel"
+        android:contentDescription="@string/girlimageview"
+        android:src="@drawable/ic_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PaymentTxtView"
+        android:layout_width="160sp"
+        android:layout_height="21dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/payment"
+        android:textColor="@color/white_color"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/GirlImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/BellImageView"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/bellimageview"
+        android:src="@drawable/ic_notification_bell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.693"
+        app:layout_constraintStart_toEndOf="@+id/PaymentTxtView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PayamoutTxtView"
+        android:layout_width="146dp"
+        android:layout_height="18sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center|start"
+        android:text="@string/payable_amount"
+        android:textColor="@color/white_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GirlImageView" />
+
+    <ImageView
+        android:id="@+id/RupeeImageView"
+        android:layout_width="33dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_rupee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PayamoutTxtView"
+        android:contentDescription="@string/rupeeimageview" />
+
+    <TextView
+        android:id="@+id/PayBillEditTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:gravity="center|start"
+        android:text="@string/payable"
+        android:textColor="@color/white_color"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toEndOf="@+id/RupeeImageView"
+        app:layout_constraintTop_toBottomOf="@+id/PayamoutTxtView" />
+
+
+    <View
+        android:id="@+id/PaycardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/round_white_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PayView" />
+
+    <TextView
+        android:id="@+id/MycardsTxtView"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/white_color"
+        android:gravity="center|start"
+        android:text="@string/my_cards"
+        android:textColor="@color/black_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/PaycardView"
+        app:layout_constraintTop_toTopOf="@+id/PaycardView" />
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/round_lightblue_gradient"
+        android:text="@string/add"
+        android:textColor="@color/white_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toEndOf="@+id/MycardsTxtView"
+        app:layout_constraintTop_toTopOf="@+id/PaycardView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ATMcardView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="80dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/PaycardView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MycardsTxtView"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <View
+            android:id="@+id/ExCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/background" />
+
+        <ImageView
+            android:id="@+id/SlotImageView"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="200sp"
+            android:layout_marginRight="200sp"
+            android:contentDescription="@string/slotimageview"
+            android:src="@drawable/ic_slot" />
+
+        <TextView
+            android:id="@+id/CardNumberTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="100sp"
+            android:layout_marginRight="20sp"
+            android:gravity="center"
+            android:text="@string/Atm_card_number"
+            android:textColor="@color/white_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ExpTxtView"
+            android:layout_width="118dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="40sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="150sp"
+            android:gravity="clip_horizontal"
+            android:text="@string/exp_20_23"
+            android:textColor="@color/white_color"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/HolderNameTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginStart="40sp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="160sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginRight="20sp"
+            android:gravity="center|start|center_horizontal"
+            android:text="@string/cheristian_fernando"
+            android:textColor="@color/white_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/PayView"
+        android:layout_width="149dp"
+        android:layout_height="50sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_lightblue_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/PaycardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PayBillEditTxt"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageView
+        android:id="@+id/ArrowImageView"
+        android:layout_width="25sp"
+        android:layout_height="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginBottom="8sp"
+        android:src="@drawable/ic_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/PaycardView"
+        app:layout_constraintStart_toStartOf="@+id/PayView"
+        app:layout_constraintTop_toTopOf="@+id/PayView"
+        app:layout_constraintVertical_bias="0.111"
+        android:contentDescription="@string/arrowimageview" />
+
+    <TextView
+        android:id="@+id/PayButton"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center|start"
+        android:text="@string/pay"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PayView"
+        app:layout_constraintEnd_toEndOf="@+id/PayView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ArrowImageView"
+        app:layout_constraintTop_toTopOf="@+id/PayView"
+        app:layout_constraintVertical_bias="0.387" />
+
+</android.support.constraint.ConstraintLayout>

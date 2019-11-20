@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
     <color name="colorAccent">#D81B60</color>
     <color name="grey_3">#f7f7f7</color>
     <color name="grey_5">#f2f2f2</color>
@@ -16,5 +16,26 @@
     <color name="darkgrey">#414141</color>
     <color name="purple">#DF00FF</color>
     <color name="yellow">#ffff00</color>
+
+    <color name="colorPrimaryDark">#000000</color>
+
+    <color name="black_color">#000000</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="navy_color"> #00008B</color>
+    <color name="blue_color">#6495ED</color>
+    <color name="verylightblue_color">#00CED1</color>
+    <color name="darkblue_color">#4A00E0</color>
+    <color name="orange_color">#e65c00</color>
+    <color name="yellow_color">#F9D423</color>
+    <color name="lightyellow_color">#feac5e</color>
+    <color name="lightorange_color">#FF5F6D </color>
+    <color name="lightyellowone_color">#FFC371</color>
+    <color name="rose_color">#FF61D2</color>
+    <color name="lightrose_color">#FE9090</color>
+    <color name="vilotone_color">#764BA2 </color>
+    <color name="viloteblue_color">#667EEA</color>
+    <color name="blueone_color">#4E65FF</color>
+    <color name="lightblueone_color">#92EFFD</color>
+    <color name="seablue_color">#62F0E5</color>
 
 </resources>
