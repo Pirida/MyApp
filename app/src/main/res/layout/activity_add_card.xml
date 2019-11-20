@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCard"
+    android:background="@drawable/round_darkblue_gradient">
+
+    <ImageView
+        android:id="@+id/AddcardBackArrowImageView"
+        android:layout_width="34dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_backarrow"
+        android:contentDescription="@string/addcardbackarrowimageview" />
+
+    <TextView
+        android:id="@+id/AddcardTxtView"
+        android:layout_width="285dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/add_card_details"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/AddcardBackArrowImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="634dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/round_white_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddcardBackArrowImageView">
+
+        <ImageView
+            android:id="@+id/VissaImageView"
+            android:layout_width="107dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_visa"
+            android:contentDescription="@string/vissaimageview" />
+
+        <ImageView
+            android:id="@+id/MasterCardImageView"
+            android:layout_width="107sp"
+            android:layout_height="76sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="36dp"
+            app:layout_constraintStart_toEndOf="@+id/VissaImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_mastercard"
+            android:contentDescription="@string/mastercardimageview" />
+
+        <ImageView
+            android:id="@+id/RupayImageView"
+            android:layout_width="107sp"
+            android:layout_height="77dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.363"
+            app:layout_constraintStart_toEndOf="@+id/MasterCardImageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_rupay"
+            android:contentDescription="@string/rupayimageview" />
+
+        <EditText
+            android:id="@+id/CardholderEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/cardholder_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black_color"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MasterCardImageView"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/CardholderNumberEditTxt"
+            android:layout_width="0dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/card_number"
+            android:inputType="number"
+            android:maxLength="16"
+            android:textColor="@color/black_color"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardholderEditTxt"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/MonthEditTxt"
+            android:layout_width="94dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/month"
+            android:textColor="@color/black_color"
+            android:inputType="none"
+            android:maxLength="2"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ExpiersTxtView"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
+
+        <EditText
+            android:id="@+id/YearEditTxt"
+            android:layout_width="105dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/year"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/black_color"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.056"
+            app:layout_constraintStart_toEndOf="@+id/MonthEditTxt"
+            app:layout_constraintTop_toBottomOf="@+id/ExpiersTxtView"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
+
+        <CheckBox
+            android:id="@+id/SaveCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15sp"
+            android:text="@string/securly_save_this_card_for_a_faster_checkout_next_time"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MonthEditTxt" />
+
+        <Button
+            android:id="@+id/SubmitButton"
+            android:layout_width="258dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20sp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/round_lightblue_gradient"
+            android:text="@string/submit"
+            android:textColor="@color/white_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SaveCheckBox" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="15sp"
+            android:layout_marginTop="20sp"
+            android:gravity="center"
+            android:text="@string/card_details_will_be_saved_securely_based_of_the_industray_standerd"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SubmitButton" />
+
+        <TextView
+            android:id="@+id/ExpiersTxtView"
+            android:layout_width="121dp"
+            android:layout_height="30sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center|start"
+            android:text="@string/expires"
+            android:textColor="@color/black_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CardholderNumberEditTxt" />
+
+        <EditText
+            android:id="@+id/CvvEditTxt"
+            android:layout_width="102dp"
+            android:layout_height="40sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/cvv"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toEndOf="@+id/YearEditTxt"
+            app:layout_constraintTop_toBottomOf="@+id/ExpiersTxtView"
+            android:importantForAutofill="no"
+            tools:targetApi="o" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
