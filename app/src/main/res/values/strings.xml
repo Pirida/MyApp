@@ -77,10 +77,11 @@
     <string name="month">Month</string>
     <string name="year">Year</string>
     <string name="securly_save_this_card_for_a_faster_checkout_next_time">Securly save this card for a faster checkout next time.</string>
-    <string name="submit">SUBMIT</string>
+
     <string name="card_details_will_be_saved_securely_based_of_the_industray_standerd">Card details will be saved securely. based of the industray standerd</string>
     <string name="expires">Expires</string>
     <string name="cvv">CVV</string>
+    <!--<string name="submit">SUBMIT</string>-->
 
 
 </resources>
