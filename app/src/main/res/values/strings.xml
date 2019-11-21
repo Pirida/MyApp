@@ -81,6 +81,22 @@
     <string name="card_details_will_be_saved_securely_based_of_the_industray_standerd">Card details will be saved securely. based of the industray standerd</string>
     <string name="expires">Expires</string>
     <string name="cvv">CVV</string>
+    <string name="studentbackarrowimageview">BackArrowImageview</string>
+    <string name="student_dashboard">STUDENT DASHBOARD</string>
+    <string name="studentimageview">StudentImageView</string>
+    <string name="rahul_arunashalam">Rahul Arunashalam</string>
+    <string name="dob_28_08_18">DOB : 28-08-18</string>
+    <string name="admin_no_pr1">Admin No : PR1</string>
+    <string name="attendanceimageview">AttendanceImageView</string>
+    <string name="attendance">Attendance</string>
+    <string name="examimageview">ExamImageView</string>
+    <string name="exams">Exams</string>
+    <string name="dairyimageview">DairyImageView</string>
+    <string name="daily_dairy">Daily Dairy</string>
+    <string name="profileimageview">ProfileImageView</string>
+    <string name="profile">Profile</string>
+    <string name="medicalimageview">MedicalImageView</string>
+    <string name="medical">Medical</string>
     <!--<string name="submit">SUBMIT</string>-->
 
 

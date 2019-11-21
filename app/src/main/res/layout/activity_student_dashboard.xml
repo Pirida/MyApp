@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/toplightblue_gradient"
+    tools:context=".StudentDashboard">
+
+    <ImageView
+        android:id="@+id/BackArrowImageview"
+        android:layout_width="39dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_backarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/backarrowimageview" />
+
+    <TextView
+        android:id="@+id/StudentDashboardTxtView"
+        android:layout_width="262dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12sp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/student_dashboard"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toEndOf="@+id/BackArrowImageview"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/StudentImageView"
+        android:layout_width="69dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_ovel"
+        android:elevation="20dp"
+        android:src="@drawable/ic_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BackArrowImageview"
+        android:contentDescription="@string/studentimageview" />
+
+    <TextView
+        android:id="@+id/StudentNameTxtView"
+        android:layout_width="250dp"
+        android:layout_height="30sp"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|start"
+        android:text="@string/rahul_arunashalam"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/StudentImageView"
+        app:layout_constraintTop_toBottomOf="@+id/StudentDashboardTxtView" />
+
+    <TextView
+        android:id="@+id/DOBTxtView"
+        android:layout_width="250dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|start"
+        android:text="@string/dob_28_08_18"
+        android:textColor="@color/white_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/StudentImageView"
+        app:layout_constraintTop_toBottomOf="@+id/StudentNameTxtView" />
+
+    <TextView
+        android:id="@+id/AdminTxtView"
+        android:layout_width="250dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center|start"
+        android:text="@string/admin_no_pr1"
+        android:textColor="@color/white_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.72"
+        app:layout_constraintStart_toEndOf="@+id/StudentImageView"
+        app:layout_constraintTop_toBottomOf="@+id/DOBTxtView" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/AttendanceCardView"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentImageView">
+
+        <ImageView
+            android:id="@+id/AttendanceImageView"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginTop="10sp"
+            app:srcCompat="@drawable/ic_attendance"
+            android:contentDescription="@string/attendanceimageview" />
+
+        <TextView
+            android:id="@+id/AttendanceTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="90sp"
+            android:gravity="center"
+            android:text="@string/attendance"
+            android:textColor="@color/black_color"
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ExamCardView"
+        android:layout_width="150dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toEndOf="@+id/AttendanceCardView"
+        app:layout_constraintTop_toBottomOf="@+id/AdminTxtView">
+
+        <ImageView
+            android:id="@+id/ExamImageView"
+            android:layout_width="match_parent"
+            android:layout_height="73sp"
+            android:layout_marginTop="10sp"
+            app:srcCompat="@drawable/ic_studentexam"
+            android:contentDescription="@string/examimageview" />
+
+        <TextView
+            android:id="@+id/ExamTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="90sp"
+            android:gravity="center"
+            android:text="@string/exams"
+            android:textColor="@color/black_color"
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/DailyDairyCardView"
+        android:layout_width="150dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardMaxElevation="5dp"
+        app:cardElevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AttendanceCardView">
+
+        <ImageView
+            android:id="@+id/DairyImageView"
+            android:layout_width="match_parent"
+            android:layout_height="73sp"
+            android:layout_marginTop="10sp"
+            app:srcCompat="@drawable/ic_dailydairy"
+            android:contentDescription="@string/dairyimageview" />
+
+        <TextView
+            android:id="@+id/DairyTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="90sp"
+            android:gravity="center"
+            android:text="@string/daily_dairy"
+            android:textColor="@color/black_color"
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ProfileCardView"
+        android:layout_width="150dp"
+        android:layout_height="132dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toEndOf="@+id/DailyDairyCardView"
+        app:layout_constraintTop_toBottomOf="@+id/ExamCardView">
+
+        <ImageView
+            android:id="@+id/ProfileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="73sp"
+            android:layout_marginTop="10sp"
+            app:srcCompat="@drawable/ic_profile"
+            android:contentDescription="@string/profileimageview" />
+
+        <TextView
+            android:id="@+id/ProfileTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="90sp"
+            android:gravity="center"
+            android:text="@string/profile"
+            android:textColor="@color/black_color"
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/MedicalCardView"
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DailyDairyCardView">
+
+        <ImageView
+            android:id="@+id/MedicalImageView"
+            android:layout_width="match_parent"
+            android:layout_height="73sp"
+            android:layout_marginTop="10sp"
+            app:srcCompat="@drawable/ic_medical"
+            android:contentDescription="@string/medicalimageview" />
+
+        <TextView
+            android:id="@+id/MedicalTxtView"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="90sp"
+            android:gravity="center"
+            android:text="@string/medical"
+            android:textColor="@color/black_color"
+            android:textSize="16sp" />
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
