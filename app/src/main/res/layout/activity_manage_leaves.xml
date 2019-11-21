@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/LeaveApproveCard"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/StuNameTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="16dp"
+                android:text="Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ClassTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="@string/stuclass"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.725" />
+
+            <TextView
+                android:id="@+id/ClassDetailsTxt"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/DivisionTxtView"
+                app:layout_constraintStart_toEndOf="@+id/ClassTxtView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.725" />
+
+            <TextView
+                android:id="@+id/DivisionTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginBottom="14dp"
+                android:text="@string/division"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ClassTxtView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/DivisionDetailsTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="C"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/DivisionTxtView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.725" />
+
+            <Button
+                android:id="@+id/ApproveBtn"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/btn_background"
+                android:text="Approved"
+                android:textStyle="bold"
+                android:textColor="@color/white_color"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/DivisionTxtView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/RegNoTxtView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Month-day"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.942"
+                app:layout_constraintStart_toEndOf="@+id/textView11"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/ImageInsideView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/circle_gradient"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/ImgView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ImageInsideView"
+                app:layout_constraintEnd_toEndOf="@+id/ImageInsideView"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="@+id/ImageInsideView"
+                app:layout_constraintTop_toTopOf="@+id/ImageInsideView"
+                app:srcCompat="@drawable/ic_taxi_driver" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/TotalLeaveView"
+        android:layout_width="145dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shadow_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+
+    <TextView
+        android:id="@+id/TotalLeaveNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/TotalLeaveView"
+        app:layout_constraintEnd_toEndOf="@+id/TotalLeaveView"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="@+id/TotalLeaveView"
+        app:layout_constraintTop_toTopOf="@+id/TotalLeaveView"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/TotalLeaveTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/total_leave"
+        android:textColor="@color/white_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/TotalLeaveView"
+        app:layout_constraintEnd_toEndOf="@+id/TotalLeaveView"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toEndOf="@+id/TotalLeaveNo"
+        app:layout_constraintTop_toTopOf="@+id/TotalLeaveView"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <TextView
+        android:id="@+id/ApplicationsTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/application"
+        android:textColor="@color/white_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/TotalLeaveView"
+        app:layout_constraintStart_toEndOf="@+id/TotalLeaveNo"
+        app:layout_constraintTop_toTopOf="@+id/TotalLeaveView"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <View
+        android:id="@+id/PendingLeaveView"
+        android:layout_width="145dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/shadow_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <TextView
+        android:id="@+id/PendingLeaveNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="05"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/PendingLeaveView"
+        app:layout_constraintEnd_toEndOf="@+id/PendingLeaveView"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="@+id/PendingLeaveView"
+        app:layout_constraintTop_toTopOf="@+id/PendingLeaveView"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <TextView
+        android:id="@+id/PendingLeaveTxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/pending_leave"
+        android:textColor="@color/white_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/PendingLeaveView"
+        app:layout_constraintEnd_toEndOf="@+id/PendingLeaveView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/PendingLeaveNo"
+        app:layout_constraintTop_toTopOf="@+id/PendingLeaveView"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <TextView
+        android:id="@+id/AppTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/application"
+        android:textColor="@color/white_color"
+        android:textSize="12sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/PendingLeaveView"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toEndOf="@+id/PendingLeaveNo"
+        app:layout_constraintTop_toTopOf="@+id/PendingLeaveView" />
+
+    <TextView
+        android:id="@+id/ManageLeaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/manage_leaves"
+        android:textColor="@color/black_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <ImageView
+        android:id="@+id/BackArrImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014"
+        app:srcCompat="@drawable/ic_arrow_back" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#e7e7e7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LeaveApproveCard" >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            app:cardBackgroundColor="#f3f3f3"
+            app:cardCornerRadius="13dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                app:cardBackgroundColor="#f6f6f6"
+                app:cardCornerRadius="12dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/LeaveDetailsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    app:cardCornerRadius="10dp">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true">
+
+                        <View
+                            android:id="@+id/ImgInsideView"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/circle_gradient"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.069"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.063" />
+
+                        <ImageView
+                            android:id="@+id/ImgStudent"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/ImgInsideView"
+                            app:layout_constraintEnd_toEndOf="@+id/ImgInsideView"
+                            app:layout_constraintStart_toStartOf="@+id/ImgInsideView"
+                            app:layout_constraintTop_toTopOf="@+id/ImgInsideView"
+                            app:srcCompat="@drawable/ic_taxi_driver" />
+
+                        <TextView
+                            android:id="@+id/StuName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Name"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.071"
+                            app:layout_constraintStart_toEndOf="@+id/ImgInsideView"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/StuRegNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="168dp"
+                            android:text="(reg no)"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.4"
+                            app:layout_constraintStart_toEndOf="@+id/ImgInsideView"
+                            app:layout_constraintTop_toBottomOf="@+id/StuName" />
+
+                        <TextView
+                            android:id="@+id/StuClass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/stuclass"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/ImgInsideView"
+                            app:layout_constraintTop_toBottomOf="@+id/StuRegNo"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <TextView
+                            android:id="@+id/StuClassDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="8"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/Subject"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.057"
+                            app:layout_constraintStart_toEndOf="@+id/StuClass"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.722" />
+
+                        <TextView
+                            android:id="@+id/StuDivision"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/division"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.042"
+                            app:layout_constraintStart_toEndOf="@+id/StuClassDetails"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.124" />
+
+                        <TextView
+                            android:id="@+id/StuDivisionDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="180dp"
+                            android:text="C"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.075"
+                            app:layout_constraintStart_toEndOf="@+id/StuDivision"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.318" />
+
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="290dp"
+                            android:layout_height="2dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="92dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="?android:attr/listDivider"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.388"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/Subject"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="Sick Leave"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:background="@drawable/grey_gradient"
+                            app:layout_constraintBottom_toTopOf="@+id/divider"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.487"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.882" />
+
+                        <View
+                            android:id="@+id/divider2"
+                            android:layout_width="290dp"
+                            android:layout_height="2dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="?android:attr/listDivider"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.312"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/divider"
+                            app:layout_constraintVertical_bias="0.238" />
+
+                        <ImageView
+                            android:id="@+id/CalenderImg"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/divider2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.045"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Subject"
+                            app:layout_constraintVertical_bias="0.65"
+                            app:srcCompat="@drawable/ic_planning" />
+
+                        <TextView
+                            android:id="@+id/LeaveFrom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/from"
+                            app:layout_constraintStart_toEndOf="@+id/CalenderImg"
+                            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                        <TextView
+                            android:id="@+id/LeaveTo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/to"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.481"
+                            app:layout_constraintStart_toEndOf="@+id/LeaveFrom"
+                            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                        <TextView
+                            android:id="@+id/FromDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="28dp"
+                            android:text="20 Jan 2019"
+                            app:layout_constraintBottom_toTopOf="@+id/divider2"
+                            app:layout_constraintStart_toEndOf="@+id/CalenderImg"
+                            app:layout_constraintTop_toBottomOf="@+id/LeaveFrom"
+                            app:layout_constraintVertical_bias="0.625" />
+
+                        <TextView
+                            android:id="@+id/ToDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="20 Jan 2019"
+                            app:layout_constraintBottom_toBottomOf="@+id/divider2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.733"
+                            app:layout_constraintStart_toEndOf="@+id/FromDate"
+                            app:layout_constraintTop_toBottomOf="@+id/LeaveTo" />
+
+                        <TextView
+                            android:id="@+id/ReasonTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="@string/reason"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.032"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/divider2"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <TextView
+                            android:id="@+id/LeaveReason"
+                            android:layout_width="290dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:text="              Gmail is a free email service developed by Google. Users can access Gmail on the web and using third-party programs that synchronize email content through POP or IMAP protocols."
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.666"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/divider2"
+                            app:layout_constraintVertical_bias="0.119" />
+
+                        <EditText
+                            android:id="@+id/Comment"
+                            android:layout_width="280dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/plaintext"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/comment"
+                            android:textSize="14dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/LeaveReason"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <View
+                            android:id="@+id/ApproveView"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/approve_bg"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/Comment"
+                            app:layout_constraintVertical_bias="0.333" />
+
+                        <TextView
+                            android:id="@+id/ApproveTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/approve"
+                            android:textColor="@color/white_color"
+                            app:layout_constraintBottom_toBottomOf="@+id/ApproveView"
+                            app:layout_constraintEnd_toEndOf="@+id/ApproveView"
+                            app:layout_constraintHorizontal_bias="0.442"
+                            app:layout_constraintStart_toStartOf="@+id/ApproveView"
+                            app:layout_constraintTop_toTopOf="@+id/ApproveView"
+                            app:layout_constraintVertical_bias="0.437" />
+
+                        <View
+                            android:id="@+id/RejectView"
+                            android:layout_width="120dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/reject_bg"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toEndOf="@+id/ApproveView"
+                            app:layout_constraintTop_toBottomOf="@+id/Comment"
+                            app:layout_constraintVertical_bias="0.352" />
+
+                        <TextView
+                            android:id="@+id/RejectTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/reject"
+                            android:textColor="@color/white_color"
+                            app:layout_constraintEnd_toEndOf="@+id/RejectView"
+                            app:layout_constraintStart_toStartOf="@+id/RejectView"
+                            app:layout_constraintTop_toTopOf="@+id/RejectView" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+
+
+
+</android.support.constraint.ConstraintLayout>

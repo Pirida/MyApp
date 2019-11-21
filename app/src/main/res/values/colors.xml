@@ -39,4 +39,64 @@
     <color name="seablue_color">#62F0E5</color>
     <color name="bluedark_color">#1D5FD7</color>
 
+
+    <color name="Grey_color">#d3d3d3</color>
+    <color name="Red_color">#ff00</color>
+    <color name="GreyDark_color">#848482</color>
+    <color name="GreenYellow">#FFCDDC39</color>
+    <color name="DarkBlue">#203d66</color>
+    <color name="Blue">#4b6cb7</color>
+
+
+    <color name="shadow_hack_level_1">#0CE91E63</color>
+    <color name="shadow_hack_level_2">#14E91E63</color>
+    <color name="shadow_hack_level_3">#1EE91E63</color>
+    <color name="shadow_hack_level_4">#1BE91E63</color>
+    <color name="shadow_hack_level_6">#23E91E63</color>
+    <color name="shadow_hack_level_7">#2FE91E63</color>
+    <color name="shadow_hack_level_8">#32E91E63</color>
+    <color name="shadow_hack_level_9">#61E91E63</color>
+    <color name="shadow_hack_level_10">#6FE91E63</color>
+    <color name="shadow_hack_level_5">#1EE91E63</color>
+
+
+
+    <color name="shadow_hack_level_11">#05E91E63</color>
+    <color name="shadow_hack_level_21">#0AE91E63</color>
+    <color name="shadow_hack_level_31">#0FE91E63</color>
+    <color name="shadow_hack_level_41">#12E91E63</color>
+    <color name="shadow_hack_level_51">#17E91E63</color>
+    <color name="shadow_hack_level_61">#1AE91E63</color>
+    <color name="shadow_hack_level_71">#1CE91E63</color>
+    <color name="shadow_hack_level_81">#21E91E63</color>
+    <color name="shadow_hack_level_91">#24E91E63</color>
+    <color name="shadow_hack_level_101">#29E91E63</color>
+
+
+
+
+    <color name="shadow_green_level_1">#0D4CAF50</color>
+    <color name="shadow_green_level_2">#144CAF50</color>
+    <color name="shadow_green_level_3">#1C4CAF50</color>
+    <color name="shadow_green_level_4">#1F4CAF50</color>
+    <color name="shadow_green_level_5">#244CAF50</color>
+    <color name="shadow_green_level_6">#294CAF50</color>
+    <color name="shadow_green_level_7">#2E4CAF50</color>
+    <color name="shadow_green_level_8">#334CAF50</color>
+    <color name="shadow_green_level_9">#614CAF50</color>
+    <color name="shadow_green_level_10">#704CAF50</color>
+
+
+    <color name="shadow_yellow_level_1">#05FF9800</color>
+    <color name="shadow_yellow_level_2">#0AFF9800</color>
+    <color name="shadow_yellow_level_3">#0FFF9800</color>
+    <color name="shadow_yellow_level_4">#14FF9800</color>
+    <color name="shadow_yellow_level_5">#19FF9800</color>
+    <color name="shadow_yellow_level_6">#1EFF9800</color>
+    <color name="shadow_yellow_level_7">#22FF9800</color>
+    <color name="shadow_yellow_level_8">#23FF9800</color>
+    <color name="shadow_yellow_level_9">#26FF9800</color>
+    <color name="shadow_yellow_level_10">#29FF9800</color>
+
+
 </resources>

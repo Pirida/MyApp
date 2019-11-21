@@ -100,4 +100,36 @@
     <!--<string name="submit">SUBMIT</string>-->
 
 
+    <!--driver module-->
+    <string name="one">one</string>
+    <string name="request">Request</string>
+    <string name="datetime">Date Time</string>
+    <string name="schoolvan">SchoolVan</string>
+    <string name="startpoint">StartPoint</string>
+    <string name="endpoint">EndPoint</string>
+    <string name="paststop">PastStop</string>
+    <string name="nextstop">NextStop</string>
+    <string name="estimatedtime">EstimatedTime</string>
+    <string name="approve">APPROVE</string>
+    <string name="reject">REJECT</string>
+    <string name="from">From :</string>
+    <string name="to">To :</string>
+    <string name="timedelayed">TimeDelayed</string>
+    <string name="comment">Comment</string>
+    <string name="reason">Reason :</string>
+    <string name="division">Division :</string>
+    <string name="stuclass">Class :</string>
+    <string name="manage_leaves">Manage Leaves</string>
+    <string name="application">Application</string>
+    <string name="pending_leave">Pending Leave</string>
+    <string name="total_leave">Total Leave</string>
+    <string name="english">ENGLISH</string>
+    <string name="mathematics">MATHEMATICS</string>
+    <string name="science">SCIENCE</string>
+    <string name="computer">COMPUTER</string>
+    <string name="drawing">DRAWING</string>
+    <string name="general_info">GENERAL INFO</string>
+    <string name="subjects">Subjects</string>
+
+
 </resources>
