@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AcadameicMarks"></activity>
+        <activity android:name=".AcadmeicMarks"></activity>
         <activity android:name=".StudentDashboard" />
         <activity android:name=".AddStaffActivity" />
         <activity android:name=".SelectPayment" />

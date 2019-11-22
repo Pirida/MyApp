@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AcadameicMarks"
+    tools:context=".AcadmeicMarks"
     android:background="@drawable/toplightblue_gradient">
 
     <ImageView
@@ -26,7 +26,7 @@
         android:layout_marginTop="12sp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
-        android:text="@string/acadameic_marks"
+        android:text="@string/acadmeic_marks"
         android:textColor="@color/white_color"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
