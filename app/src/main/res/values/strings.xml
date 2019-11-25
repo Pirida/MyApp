@@ -145,6 +145,19 @@
     <string name="drawing">DRAWING</string>
     <string name="general_info">GENERAL INFO</string>
     <string name="subjects">Subjects</string>
+    <string name="profile">Profile</string>
+    <string name="profileimageview">ProfileImageView</string>
+    <string name="raje_selvam">Raje Selvam</string>
+    <string name="fathername_selvam_s">FatherName:Selvam.S</string>
+    <string name="_91_90562_45089">+91 90562 45089</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phoneimageview">PhoneImageView</string>
+    <string name="admissionimageview">AdmissionImageView</string>
+    <string name="wsb_0015ajhg2">WSB - 0015AJHG2</string>
+    <string name="admission_number">Admission Number</string>
+    <string name="sectionimageview">SectionImageView</string>
+    <string name="a_first_class_top">A - First Class (Top)</string>
+    <string name="section">Section</string>
 
 
 </resources>
