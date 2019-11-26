@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/toplightblue_gradient">
+
+    <TextView
+        android:id="@+id/Gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/gallery"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <ImageView
+        android:id="@+id/BackArrImgwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014"
+        app:srcCompat="@drawable/ic_arrow_white" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/FamilyCard"
+        android:layout_width="320dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gallery"
+        app:layout_constraintVertical_bias="0.069">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/parentskids">
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/SchlTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="SCHOOL"
+        android:textColor="@color/white_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FamilyCard"
+        app:layout_constraintVertical_bias="0.064" />
+
+
+    <ImageView
+        android:id="@+id/MoreVertWhiteImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/FamilyCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toEndOf="@+id/Gallery"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/ic_more_vert_white" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/AnnualdayImg"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FamilyCard"
+        app:layout_constraintVertical_bias="0.294">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/annualday">
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/SportsdayImg"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toEndOf="@+id/AnnualdayImg"
+        app:layout_constraintTop_toBottomOf="@+id/FamilyCard"
+        app:layout_constraintVertical_bias="0.294">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/sports">
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/TeachersdayCard"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnnualdayImg"
+        app:layout_constraintVertical_bias="0.251">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/teachersday">
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/EventsCard"
+        android:layout_width="135dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toEndOf="@+id/TeachersdayCard"
+        app:layout_constraintTop_toBottomOf="@+id/SportsdayImg"
+        app:layout_constraintVertical_bias="0.251">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/otherevents">
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/AnnualdayTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/annualday"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/AnnualdayImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SchlTxt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/SportsdayTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/sportsday"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/SportsdayImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.828"
+        app:layout_constraintStart_toEndOf="@+id/AnnualdayTxt"
+        app:layout_constraintTop_toBottomOf="@+id/SchlTxt"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/ViewLineVertical"
+        android:layout_width="2dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/line_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toEndOf="@+id/AnnualdayImg"
+        app:layout_constraintTop_toBottomOf="@+id/FamilyCard"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <View
+        android:id="@+id/ViewLineHorizontal"
+        android:layout_width="200dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/horizontal_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/TeachersdayCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.287"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AnnualdayImg"
+        app:layout_constraintVertical_bias="0.628">
+
+    </View>
+
+    <TextView
+        android:id="@+id/TeachersdayTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/teachersday"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeachersdayCard"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/OtherevtsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/otherevents"
+        android:textStyle="bold"
+        android:textColor="@color/black_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toEndOf="@+id/TeachersdayTxt"
+        app:layout_constraintTop_toBottomOf="@+id/EventsCard"
+        app:layout_constraintVertical_bias="0.014" />
+
+
+</android.support.constraint.ConstraintLayout>

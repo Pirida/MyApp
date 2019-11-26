@@ -46,6 +46,8 @@
     <color name="GreenYellow">#FFCDDC39</color>
     <color name="DarkBlue">#203d66</color>
     <color name="Blue">#4b6cb7</color>
+    <color name="lightyellow">#94F0E37E</color>
+    <color name="orange">#FF5c00</color>
 
 
     <color name="shadow_hack_level_1">#0CE91E63</color>
@@ -97,6 +99,8 @@
     <color name="shadow_yellow_level_8">#23FF9800</color>
     <color name="shadow_yellow_level_9">#26FF9800</color>
     <color name="shadow_yellow_level_10">#29FF9800</color>
+
+
 
 
 </resources>

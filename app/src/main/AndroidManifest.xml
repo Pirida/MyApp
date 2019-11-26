@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StudentDashboard"></activity>
+        <activity android:name=".SubjectActivity"></activity>
+        <activity android:name=".AddCard" />
+        <activity android:name=".StudentDashboard" />
         <activity android:name=".AddStaffActivity" />
         <activity android:name=".SelectPayment" />
         <activity android:name=".Signup" />
@@ -19,7 +21,7 @@
         <activity android:name=".StudentDetailsActivity" />
         <activity android:name=".TabActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".AddCard">
+        <activity android:name=".GalleryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

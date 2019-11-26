@@ -57,8 +57,7 @@
     <string name="signup">SIGNUP</string>
     <string name="backarrowimageview">BackarrowImageView</string>
     <string name="select_payment">SELECT PAYMENT</string>
-    <string name="examimageview">ExamImageView</string>
-    <string name="exams">Exams</string>
+
     <string name="tutionfeeimageview">TutionFeeImageView</string>
     <string name="tution_fees">Tution Fees</string>
     <string name="eventimageview">EventImageView</string>
@@ -130,6 +129,11 @@
     <string name="drawing">DRAWING</string>
     <string name="general_info">GENERAL INFO</string>
     <string name="subjects">Subjects</string>
+    <string name="gallery">Gallery</string>
+    <string name="otherevents">OtherEvents</string>
+    <string name="teachersday">TeachersDay</string>
+    <string name="sportsday">SportsDay</string>
+    <string name="annualday">AnnualDay</string>
 
 
 </resources>
