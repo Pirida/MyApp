@@ -38,6 +38,11 @@
     <color name="lightblueone_color">#92EFFD</color>
     <color name="seablue_color">#62F0E5</color>
     <color name="bluedark_color">#1D5FD7</color>
+    <color name="green_color">#56ab2f</color>
+    <color name="lightgreen_color">#a8e063</color>
+    <color name="bluevilot_color">#4776E6</color>
+    <color name="vilote_color">#8E54E9</color>
+    <color name="bluegreen_color">#05A498</color>
 
 
     <color name="Grey_color">#d3d3d3</color>
