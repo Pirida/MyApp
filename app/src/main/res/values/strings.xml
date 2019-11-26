@@ -162,6 +162,8 @@
     <string name="sectionimageview">SectionImageView</string>
     <string name="a_first_class_top">A - First Class (Top)</string>
     <string name="section">Section</string>
+    <string name="exams">Exams</string>
+    <string name="examimageview">ExamImageView</string>
 
 
 </resources>
