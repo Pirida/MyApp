@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Discipline"></activity>
+        <activity android:name=".GalleryActivity"></activity>
         <activity android:name=".SubjectActivity" />
         <activity android:name=".AddCard" />
         <activity android:name=".StudentDashboard" />
@@ -22,7 +22,7 @@
         <activity android:name=".StudentDetailsActivity" />
         <activity android:name=".TabActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".GalleryActivity">
+        <activity android:name=".Discipline">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -53,6 +53,7 @@
     <color name="Blue">#4b6cb7</color>
     <color name="lightyellow">#94F0E37E</color>
     <color name="orange">#FF5c00</color>
+    <color name="gray_color">#DCDCDC</color>
 
 
     <color name="shadow_hack_level_1">#0CE91E63</color>
