@@ -18,11 +18,12 @@
         <activity android:name=".Signup" />
         <activity android:name=".Login" />
         <activity android:name=".Payment" />
+        <activity android:name=".Discipline"/>
         <activity android:name=".StaffActivity" />
         <activity android:name=".StudentDetailsActivity" />
         <activity android:name=".TabActivity" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Discipline">
+        <activity android:name=".Profile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
