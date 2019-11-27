@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Discipline"
+    android:background="@drawable/toplightblue_gradient">
+
+    <ImageView
+        android:id="@+id/BackArrowImageView"
+        android:layout_width="39dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/backarrowimageview"
+        android:src="@drawable/ic_backarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/StudentDashboardTxtView"
+        android:layout_width="113dp"
+        android:layout_height="40sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="@string/discipline"
+        android:textColor="@color/white_color"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.312"
+        app:layout_constraintStart_toEndOf="@+id/BackArrowImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="203dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StudentDashboardTxtView" >
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <View
+                android:id="@+id/OutoffView"
+                android:layout_width="21dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/OutoffImageView"
+                android:layout_width="15sp"
+                android:layout_height="15dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/OutoffView"
+                app:layout_constraintEnd_toEndOf="@+id/OutoffView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_outoffovel"
+                android:contentDescription="@string/outoffimageview" />
+
+            <TextView
+                android:id="@+id/InsidentTxtView"
+                android:layout_width="213dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8sp"
+                android:gravity="center|start"
+                android:text="@string/insidentdetails_nothing"
+                android:textColor="@color/black_color"
+                android:textSize="16sp"
+                app:layout_constraintStart_toEndOf="@+id/OutoffView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/DateTxtView"
+                android:layout_width="96dp"
+                android:layout_height="30sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/sep_2018"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.636"
+                app:layout_constraintStart_toEndOf="@+id/InsidentTxtView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/ProfileView"
+                android:layout_width="51dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_coffeecolor_ovel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/OutoffView" />
+
+            <ImageView
+                android:id="@+id/ProfileImageView"
+                android:layout_width="39dp"
+                android:layout_height="38dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ProfileView"
+                app:layout_constraintEnd_toEndOf="@+id/ProfileView"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="@+id/ProfileView"
+                app:layout_constraintTop_toTopOf="@+id/ProfileView"
+                app:layout_constraintVertical_bias="0.444"
+                app:srcCompat="@drawable/ic_dailydairy"
+                android:contentDescription="@string/profileimageview" />
+
+            <View
+                android:id="@+id/BlueDotView"
+                android:layout_width="19dp"
+                android:layout_height="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ProfileView"
+                app:layout_constraintStart_toEndOf="@+id/ProfileView" />
+
+            <ImageView
+                android:id="@+id/BlueDotImageView"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginEnd="4dp"
+                app:layout_constraintBottom_toBottomOf="@+id/ProfileImageView"
+                app:layout_constraintEnd_toEndOf="@+id/ProfileImageView"
+                app:layout_constraintStart_toEndOf="@+id/ProfileView"
+                app:srcCompat="@drawable/ic_dot"
+                android:contentDescription="@string/bluedotimageview" />
+
+            <TextView
+                android:id="@+id/StudentNameTxtView"
+                android:layout_width="256dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center|start"
+                android:text="@string/student_name_sebastion"
+                android:textColor="@color/black_color"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.701"
+                app:layout_constraintStart_toEndOf="@+id/ProfileView"
+                app:layout_constraintTop_toBottomOf="@+id/InsidentTxtView" />
+
+            <TextView
+                android:id="@+id/ReportTxtView"
+                android:layout_width="256dp"
+                android:layout_height="30sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center|start"
+                android:text="@string/reported_by_sebas"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.859"
+                app:layout_constraintStart_toEndOf="@+id/ProfileView"
+                app:layout_constraintTop_toBottomOf="@+id/StudentNameTxtView" />
+
+            <ImageView
+                android:id="@+id/RoseDotImageView"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="44dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ProfileView"
+                app:srcCompat="@drawable/ic_dotrose"
+                android:contentDescription="@string/rosedotimageview" />
+
+            <TextView
+                android:id="@+id/PutTxtView"
+                android:layout_width="70sp"
+                android:layout_height="26dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:gravity="center|start"
+                android:text="@string/put_type"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/RoseDotImageView"
+                app:layout_constraintTop_toBottomOf="@+id/ProfileView" />
+
+            <TextView
+                android:id="@+id/SebasTxtView"
+                android:layout_width="70dp"
+                android:layout_height="26sp"
+                android:layout_marginStart="36dp"
+                android:text="@string/sebas"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PutTxtView" />
+
+            <View
+                android:id="@+id/RightView"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gray_gradient"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/PutTxtView"
+                app:layout_constraintTop_toBottomOf="@+id/ReportTxtView" />
+
+            <ImageView
+                android:id="@+id/OrangeDotImageView"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toEndOf="@+id/RightView"
+                app:layout_constraintTop_toBottomOf="@+id/ReportTxtView"
+                app:srcCompat="@drawable/ic_dotorange"
+                android:contentDescription="@string/orangedotimageview" />
+
+            <TextView
+                android:id="@+id/PerformTxtView"
+                android:layout_width="70sp"
+                android:layout_height="26sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center|start"
+                android:text="@string/dpoints"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/OrangeDotImageView"
+                app:layout_constraintTop_toBottomOf="@+id/ReportTxtView" />
+
+            <TextView
+                android:id="@+id/NothingTxtView"
+                android:layout_width="70sp"
+                android:layout_height="26sp"
+                android:layout_marginStart="44dp"
+                android:text="@string/nothing"
+                android:textColor="@color/black_color"
+                app:layout_constraintStart_toEndOf="@+id/RightView"
+                app:layout_constraintTop_toBottomOf="@+id/PerformTxtView" />
+
+            <View
+                android:id="@+id/rightView"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/gray_gradient"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/PerformTxtView"
+                app:layout_constraintTop_toBottomOf="@+id/ReportTxtView"
+                app:layout_constraintVertical_bias="0.58" />
+
+            <ImageView
+                android:id="@+id/SkyDotImageView"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toEndOf="@+id/rightView"
+                app:layout_constraintTop_toBottomOf="@+id/ReportTxtView"
+                app:srcCompat="@drawable/ic_dotskyblue"
+                android:contentDescription="@string/skydotimageview" />
+
+            <TextView
+                android:id="@+id/ActionTxtView"
+                android:layout_width="70dp"
+                android:layout_height="26sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center|start"
+                android:text="@string/action"
+                android:textColor="@android:color/tertiary_text_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/SkyDotImageView"
+                app:layout_constraintTop_toBottomOf="@+id/ReportTxtView" />
+
+            <TextView
+                android:id="@+id/nothingTxtview"
+                android:layout_width="70sp"
+                android:layout_height="26sp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center|start"
+                android:text="@string/nothing"
+                android:textColor="@color/black_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/rightView"
+                app:layout_constraintTop_toBottomOf="@+id/ActionTxtView"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -164,6 +164,21 @@
     <string name="section">Section</string>
     <string name="exams">Exams</string>
     <string name="examimageview">ExamImageView</string>
+    <string name="discipline">Discipline</string>
+    <string name="outoffimageview">OutoffImageView</string>
+    <string name="insidentdetails_nothing">Insidentdetails : Nothing</string>
+    <string name="sep_2018">Sep 2018</string>
+    <string name="bluedotimageview">BlueDotImageView</string>
+    <string name="student_name_sebastion">Student Name - Sebastion</string>
+    <string name="reported_by_sebas">Reported by : Sebas</string>
+    <string name="rosedotimageview">RoseDotImageView</string>
+    <string name="put_type">Put Type</string>
+    <string name="sebas">Sebas</string>
+    <string name="orangedotimageview">OrangeDotImageView</string>
+    <string name="dpoints">DPoints</string>
+    <string name="nothing">Nothing</string>
+    <string name="skydotimageview">SkyDotImageView</string>
+    <string name="action">Action</string>
 
 
 </resources>
