@@ -180,5 +180,14 @@
     <string name="skydotimageview">SkyDotImageView</string>
     <string name="action">Action</string>
 
+    <string name="app_name1">SchoolApp</string>
+
+    <string name="login">Login</string>
+    <string name="textline1">Please give it to</string>
+    <string name="textline2">the cashier to scan the code</string>
+    <string name="mcdonald_s">McDonald\'s</string>
+    <string name="order_food">Order food:</string>
+    <string name="complete">Complete</string>
+
 
 </resources>
